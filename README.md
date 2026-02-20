@@ -12,7 +12,7 @@
 
 ## 安装方法
 
-### 方式一：仅安装 Skill
+### 第一步：安装 Skill
 
 将 `css-theme-generator` 文件夹复制到你的 AionUI skills 目录：
 ```bash
@@ -20,7 +20,7 @@ cp -r css-theme-generator ~/.aionui-config/skills/
 ```
 重启 AionUI，skill 会自动加载。
 
-### 方式二：创建专用助手（推荐）
+### 第二步（推荐）：创建专用助手
 
 为了更方便地使用主题生成功能，建议创建一个专门的"主题设计师"助手：
 
@@ -41,7 +41,7 @@ cp -r css-theme-generator ~/.aionui-config/skills/
    - 直接说："帮我生成一个赛博朋克风格的主题"
    - 或上传图片说："根据这张图片生成主题"
 
-这样就不需要每次都记得触发关键词了，直接和助手对话即可！
+创建助手后，就不需要每次都记得触发关键词了，直接和助手对话即可！
 
 ## 使用方法
 
