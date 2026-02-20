@@ -12,12 +12,36 @@
 
 ## 安装方法
 
-1. 将 `css-theme-generator` 文件夹复制到你的 AionUI skills 目录：
-   ```bash
-   cp -r css-theme-generator ~/.aionui-config/skills/
-   ```
+### 方式一：仅安装 Skill
 
-2. 重启 AionUI，skill 会自动加载
+将 `css-theme-generator` 文件夹复制到你的 AionUI skills 目录：
+```bash
+cp -r css-theme-generator ~/.aionui-config/skills/
+```
+重启 AionUI，skill 会自动加载。
+
+### 方式二：创建专用助手（推荐）
+
+为了更方便地使用主题生成功能，建议创建一个专门的"主题设计师"助手：
+
+1. **在 AionUI 中创建新助手**：
+   - 打开 AionUI → 助手管理 → 创建助手
+   - 助手名称：`主题设计师` 或 `Theme Designer`
+   - 助手描述：`专门生成 AionUI CSS 主题`
+
+2. **关联规则文件**：
+   - 将本仓库中的 `theme-designer-assistant-rule.md` 内容复制到助手的规则中
+   - 或者在助手设置中上传该文件
+
+3. **关联 Skill**：
+   - 在助手的技能配置中，勾选 `css-theme-generator`
+
+4. **开始使用**：
+   - 切换到"主题设计师"助手
+   - 直接说："帮我生成一个赛博朋克风格的主题"
+   - 或上传图片说："根据这张图片生成主题"
+
+这样就不需要每次都记得触发关键词了，直接和助手对话即可！
 
 ## 使用方法
 
@@ -80,6 +104,8 @@
 
 ### 参考文档
 
+- `SKILL.md` - Skill 定义和工作流程
+- `theme-designer-assistant-rule.md` - 助手规则文件（用于创建专用助手）
 - `references/css-template.md` - 完整的 AionUI CSS 模板结构
 - `references/color-theory.md` - 色彩推导方法论
 
