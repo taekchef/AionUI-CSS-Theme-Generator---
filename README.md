@@ -14,22 +14,16 @@
 
 ### 方法一：一键安装（推荐）
 
-在终端运行以下命令，自动下载并安装：
+在终端运行以下命令：
 
 **macOS / Linux:**
 ```bash
-git clone https://github.com/taekchef/AionUI-CSS-Theme-Generator---.git /tmp/css-theme-gen && \
-mkdir -p ~/.aionui-config/skills && \
-mv /tmp/css-theme-gen/css-theme-generator ~/.aionui-config/skills/ && \
-rm -rf /tmp/css-theme-gen
+git clone https://github.com/taekchef/AionUI-CSS-Theme-Generator---.git /tmp/css-theme-gen && mkdir -p ~/.aionui-config/skills && mv /tmp/css-theme-gen/css-theme-generator ~/.aionui-config/skills/ && rm -rf /tmp/css-theme-gen
 ```
 
 **Windows (PowerShell):**
 ```powershell
-git clone https://github.com/taekchef/AionUI-CSS-Theme-Generator---.git $env:TEMP\css-theme-gen
-New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.aionui-config\skills"
-Move-Item "$env:TEMP\css-theme-gen\css-theme-generator" "$env:USERPROFILE\.aionui-config\skills\"
-Remove-Item -Recurse -Force "$env:TEMP\css-theme-gen"
+git clone https://github.com/taekchef/AionUI-CSS-Theme-Generator---.git $env:TEMP\css-theme-gen; New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.aionui-config\skills"; Move-Item "$env:TEMP\css-theme-gen\css-theme-generator" "$env:USERPROFILE\.aionui-config\skills\"; Remove-Item -Recurse -Force "$env:TEMP\css-theme-gen"
 ```
 
 ### 方法二：手动安装
