@@ -12,13 +12,36 @@
 
 ## 安装方法
 
+### 前置要求
+
+确保你已经安装并运行过 AionUI。如果不熟悉 AionUI 的配置文件位置，请先查看 AionUI 的文档。
+
 ### 基础安装：安装 Skill
 
-将 `css-theme-generator` 文件夹复制到你的 AionUI skills 目录：
+**第一步：找到 AionUI 的 skills 目录**
+
+AionUI 的 skills 目录通常位于：
+- **macOS/Linux**: `~/.aionui-config/skills/`
+- **Windows**: `%USERPROFILE%\.aionui-config\skills\`
+
+如果不确定，可以在 AionUI 的设置中查看配置文件路径。
+
+**第二步：复制 skill 文件夹**
+
 ```bash
+# macOS/Linux
 cp -r css-theme-generator ~/.aionui-config/skills/
+
+# Windows (PowerShell 或 CMD)
+xcopy css-theme-generator %USERPROFILE%\.aionui-config\skills\css-theme-generator\ /E /I
 ```
-重启 AionUI，skill 会自动加载。
+
+或者直接在文件管理器中：
+- 将 `css-theme-generator` 文件夹复制到 AionUI 的 skills 目录
+
+**第三步：重启 AionUI**
+
+完全退出并重新启动 AionUI，skill 会自动加载。
 
 安装完成后，你可以选择以下两种使用方式：
 
