@@ -12,8 +12,6 @@
 
 ## 安装方法
 
-### 方法一：一键安装（推荐）
-
 在终端运行以下命令：
 
 **macOS / Linux:**
@@ -21,34 +19,10 @@
 git clone https://github.com/taekchef/AionUI-CSS-Theme-Generator---.git /tmp/css-theme-gen && mkdir -p ~/.aionui-config/skills && mv /tmp/css-theme-gen/css-theme-generator ~/.aionui-config/skills/ && rm -rf /tmp/css-theme-gen
 ```
 
-**Windows (PowerShell):**
+**Windows:**
 ```powershell
-git clone https://github.com/taekchef/AionUI-CSS-Theme-Generator---.git $env:TEMP\css-theme-gen; New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.aionui-config\skills"; Move-Item "$env:TEMP\css-theme-gen\css-theme-generator" "$env:USERPROFILE\.aionui-config\skills\"; Remove-Item -Recurse -Force "$env:TEMP\css-theme-gen"
+git clone https://github.com/taekchef/AionUI-CSS-Theme-Generator---.git %TEMP%\css-theme-gen && if not exist "%USERPROFILE%\.aionui-config\skills" mkdir "%USERPROFILE%\.aionui-config\skills" && move /Y "%TEMP%\css-theme-gen\css-theme-generator" "%USERPROFILE%\.aionui-config\skills\" && rd /s /q "%TEMP%\css-theme-gen"
 ```
-
-### 方法二：手动安装
-
-**第一步：下载本仓库**
-
-下载 ZIP 文件或使用 git clone
-
-**第二步：复制 skill 文件夹**
-
-```bash
-# macOS/Linux
-cp -r css-theme-generator ~/.aionui-config/skills/
-
-# Windows (PowerShell)
-Copy-Item -Recurse css-theme-generator "$env:USERPROFILE\.aionui-config\skills\"
-```
-
-或者直接在文件管理器中，将 `css-theme-generator` 文件夹复制到 AionUI 的 skills 目录：
-- **macOS/Linux**: `~/.aionui-config/skills/`
-- **Windows**: `%USERPROFILE%\.aionui-config\skills\`
-
-**第三步：重启 AionUI**
-
-完全退出并重新启动 AionUI，skill 会自动加载。
 
 安装完成后，你可以选择以下两种使用方式：
 
